@@ -14,9 +14,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookWeb.WebUI.Sitem
+namespace BookWeb.WebUI.Management
 {
-
     public class Startup
     {
         public IConfiguration Configuration { get; }
@@ -61,7 +60,7 @@ namespace BookWeb.WebUI.Sitem
 
             services.Configure<RouteOptions>(routeOptions => routeOptions.AppendTrailingSlash = true);
         }
-      
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -91,7 +90,7 @@ namespace BookWeb.WebUI.Sitem
             app.UseMvc(routes =>
             {
                 //ekleme olabilir
-                routes.MapRoute(name:"default", template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
