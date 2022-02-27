@@ -1,13 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1758
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{77D1733D-8F82-47C9-A47A-3D02ECF9D782}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookWeb.WebUI.Sitem", "WebUI\BookWeb.WebUI.Sitem\BookWeb.WebUI.Sitem.csproj", "{5457BF48-4D3C-4F04-B978-868A439C7639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookWeb.Models", "BookWeb.Models\BookWeb.Models.csproj", "{92AB97BF-BD58-465F-A535-8F442293A9B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookWeb.Datas", "BookWeb.Datas\BookWeb.Datas.csproj", "{5387FD8C-99B1-4094-A592-C515CB34AB62}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5457BF48-4D3C-4F04-B978-868A439C7639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5457BF48-4D3C-4F04-B978-868A439C7639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5457BF48-4D3C-4F04-B978-868A439C7639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5457BF48-4D3C-4F04-B978-868A439C7639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92AB97BF-BD58-465F-A535-8F442293A9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AB97BF-BD58-465F-A535-8F442293A9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AB97BF-BD58-465F-A535-8F442293A9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AB97BF-BD58-465F-A535-8F442293A9B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5387FD8C-99B1-4094-A592-C515CB34AB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5387FD8C-99B1-4094-A592-C515CB34AB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5387FD8C-99B1-4094-A592-C515CB34AB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5387FD8C-99B1-4094-A592-C515CB34AB62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5457BF48-4D3C-4F04-B978-868A439C7639} = {77D1733D-8F82-47C9-A47A-3D02ECF9D782}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31827D6C-8093-4CB0-B096-66B969C8A0CC}
