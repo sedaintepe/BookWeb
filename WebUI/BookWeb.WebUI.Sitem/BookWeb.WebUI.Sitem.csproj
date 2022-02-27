@@ -5,9 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="wwwroot\" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BookWeb.Datas\BookWeb.Datas.csproj" />
+    <ProjectReference Include="..\..\BookWeb.Models\BookWeb.Models.csproj" />
+    <ProjectReference Include="..\BookWeb.WebUI.Infrastructure\BookWeb.WebUI.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
