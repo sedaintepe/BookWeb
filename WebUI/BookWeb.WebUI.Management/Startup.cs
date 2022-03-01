@@ -1,3 +1,4 @@
+using BookWeb.Datas;
 using BookWeb.Datas.Infrastructure.Entities;
 using BookWeb.WebUI.Infrastructure.Rules;
 using Microsoft.AspNetCore.Builder;
@@ -44,11 +45,13 @@ namespace BookWeb.WebUI.Management
             services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
             services.AddOptions();
 
+
             //cookie
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.MinimumSameSitePolicy = SameSiteMode.Strict;
             });
+            services.AddTransient<PublishData>();
 
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
@@ -60,6 +63,7 @@ namespace BookWeb.WebUI.Management
 
             services.Configure<RouteOptions>(routeOptions => routeOptions.AppendTrailingSlash = true);
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

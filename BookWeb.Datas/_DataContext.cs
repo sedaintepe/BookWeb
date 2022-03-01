@@ -5,7 +5,7 @@
 
     public class DataContext : DbContext
     {
-        public DataContext(string connectionString) : base (new DbContextOptionsBuilder().UseMySQL(connectionString).Options)
+        public DataContext(string connectionString) : base(new DbContextOptionsBuilder().UseMySQL(connectionString).Options)
         {
         }
 
